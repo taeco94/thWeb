@@ -24,12 +24,6 @@ var div = function(winW){
 
 var before = div(winW);
 
-$(window).on('resize', function(){
-  var nw = $(window).width();
-  var nowD = div(nw);
-  if(nw !== nowD){
-  location.reload();
-  }; }); 
 
 
 //====================================mobile.js start
