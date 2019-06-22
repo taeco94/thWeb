@@ -23,6 +23,15 @@ var div = function(winW){
 
 var before = div(winW);
 
+
+
+
+//====================================pcfull.js start
+
+
+if( $(window).width() > 768 && $(window).width() < 1367) {  
+
+
 $(window).on('resize', function(){
   var nw = $(window).width();
   var nowD = div(nw);
@@ -31,12 +40,6 @@ $(window).on('resize', function(){
   }; }); 
 
 
-
-
-//====================================pcfull.js start
-
-
-if( $(window).width() > 768 && $(window).width() < 1367) {  
 
 
 

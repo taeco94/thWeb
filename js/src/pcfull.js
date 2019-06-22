@@ -24,12 +24,7 @@ var div = function(winW){
 
 var before = div(winW);
 
-$(window).on('resize', function(){
-  var nw = $(window).width();
-  var nowD = div(nw);
-  if(nw !== nowD){
-  location.reload();
-  }; }); 
+
 
 
 
@@ -40,6 +35,12 @@ $(window).on('resize', function(){
 if($(window).width() >1366) {  
 
 
+$(window).on('resize', function(){
+  var nw = $(window).width();
+  var nowD = div(nw);
+  if(nw !== nowD){
+  location.reload();
+  }; }); 
 
 //====================================gnb
 var btn = $('.gnb_btn');
